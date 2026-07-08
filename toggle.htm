@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Toggle</title>
+  </head>
+  <body>
+    <div></div>
+
+    <!-- <div class="grid grid-cols-3 gap-2 bg-white max-w-lg">
+
+        <div class="border border-gray-300 rounded-xl p-5  text-center  mx-auto  min-h-[180px]">
+            <img  class="mx-auto" src="/assets/money1.png" alt="">
+            <h3>Add Money</h3>
+        </div>
+        <div class="border border-gray-300 text-center mx-auto p-5 rounded-xl min-h-[180px]">
+            <img class="mx-auto" src="/assets/purse1.png" alt="">
+            <h3>Cash out</h3>
+        </div>
+        <div class="border border-gray-300 text-center mx-auto p-5 rounded-xl min-h-[180px]">
+            <img class="mx-auto" src="/assets/bonus1.png" alt="">
+            <h3>Bonus</h3>
+        </div>
+        <div  class="border border-gray-300 text-center mx-auto p-5 rounded-xl min-h-[180px]">
+            <img class="mx-auto" src="/assets/transaction1.png" alt="">
+            <h3>Transaction</h3>
+        </div>
+        <div  class="border border-gray-300 text-center mx-auto p-5 rounded-xl min-h-[180px]">
+            <img src="/assets/wallet1.png" alt="">
+            <h3>Wallet</h3>
+        </div>
+        <div class="border border-gray-300 text-center justify-center mx-auto p-5 rounded-xl min-h-[180px] min-w-[180px]" >
+            <img class="mx-auto" src="/assets/send1.png" alt="">
+            <h3>Send Money</h3>
+        </div>
+    </div> -->
+
+    <div class="max-w-lg mx-auto my-8 grid grid-cols-3 gap-5">
+      <div id = "Add-money"
+        class="border border-gray-300 rounded-xl h-[180px] flex flex-col items-center justify-center text-center cursor-pointer hover:border-blue-500 hover:shadow-lg transition-all duration-300"
+      >
+        <img class="w-14 h-14 mb-4" src="/assets/money1.png" alt="Add Money" />
+        <h3 class="font-semibold text-lg">Add Money</h3>
+      </div>
+
+      <div id = "Cash-out"
+        class="border border-gray-300 rounded-xl h-[180px] flex flex-col items-center justify-center text-center cursor-pointer hover:border-blue-500 hover:shadow-lg transition-all duration-300"
+      >
+        <img class="w-14 h-14 mb-4" src="/assets/send1.png" alt="Send Money" />
+        <h3 class="font-semibold text-lg">Send Money</h3>
+      </div>
+      <div
+        class="border border-gray-300 rounded-xl h-[180px] flex flex-col items-center justify-center text-center cursor-pointer hover:border-blue-500 hover:shadow-lg transition-all duration-300"
+      >
+        <img class="w-14 h-14 mb-4" src="/assets/purse1.png" alt="Cash Out" />
+        <h3 class="font-semibold text-lg">Cash Out</h3>
+      </div>
+
+      <div
+        class="border border-gray-300 rounded-xl h-[180px] flex flex-col items-center justify-center text-center cursor-pointer hover:border-blue-500 hover:shadow-lg transition-all duration-300"
+      >
+        <img class="w-14 h-14 mb-4" src="/assets/bonus1.png" alt="Bonus" />
+        <h3 class="font-semibold text-lg">Bonus</h3>
+      </div>
+
+      <div
+        class="border border-gray-300 rounded-xl h-[180px] flex flex-col items-center justify-center text-center cursor-pointer hover:border-blue-500 hover:shadow-lg transition-all duration-300"
+      >
+        <img
+          class="w-14 h-14 mb-4"
+          src="/assets/transaction1.png"
+          alt="Transaction"
+        />
+        <h3 class="font-semibold text-lg">Transaction</h3>
+      </div>
+
+      <div
+        class="border border-gray-300 rounded-xl h-[180px] flex flex-col items-center justify-center text-center cursor-pointer hover:border-blue-500 hover:shadow-lg transition-all duration-300"
+      >
+        <img class="w-14 h-14 mb-4" src="/assets/wallet1.png" alt="Wallet" />
+        <h3 class="font-semibold text-lg">Wallet</h3>
+      </div>
+    </div>
+
+    <!-- All forms are here -->
+    <!-- Add money -->
+    <div id = "add-form" class = "max-w-lg mx-auto bg-white p-6 rounded-2xl shadow-md">
+      <form>
+        <label class="block mb-2 font-semibold text-gray-700"> Amount </label>
+
+        <input
+          type="number"
+          placeholder="Enter amount"
+          class="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500"
+        />
+
+        <button
+          type="submit"
+          class="w-full mt-5 bg-blue-600 text-white py-3 rounded-xl hover:bg-blue-700 transition"
+        >
+          Add Money
+        </button>
+      </form>
+    </div>
+    
+    <!-- Cash out -->
+    <div id = "cash-out-form" class = "max-w-lg mx-auto bg-white p-6 rounded-2xl shadow-md hidden">
+      <form>
+        <label class="block mb-2 font-semibold text-gray-700"> Amount </label>
+
+        <input
+          type="number"
+          placeholder="Enter amount"
+          class="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500"
+        />
+
+        <button
+          type="submit"
+          class="w-full mt-5 bg-blue-600 text-white py-3 rounded-xl hover:bg-blue-700 transition"
+        >
+         Cash Out
+        </button>
+      </form>
+    </div>
+
+    <script src="toggle.js">
+
+    </script>
+  </body>
+</html>
